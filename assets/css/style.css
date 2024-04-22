@@ -1,11 +1,13 @@
 :root {
-    --primary-color: #258c05;
-    --secondary-color: #928272;
-    --text-color: #1a3037;
-    --button-color: #ffd700;
-    --button-hover: #00bfff;
-    --bg-color: #ece4db;
+    --bgc: #151725;
+    --primary-color: #7d84b2;
+    --secondary-color: #d1d5db;
+    --text-color: #d8e0eb;
+    --button-color: #d8e0eb;
+    --button-hover: #5d6f83;
+    --bg-color: #000000;
     --box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.01);
+    --bg-color-new: #e6f2f4;
 }
 
 .nav-pills .nav-link {
@@ -16,10 +18,11 @@
     position: relative;
     bottom: 0;
     transition: all 600ms;
+    transform: scale(1);
 }
 
 .hover-up:hover {
-    bottom: 8px;
+    transform: scale(1.05);
 }
 
 .nav-pills .nav-link.active {
@@ -137,8 +140,9 @@ video {
 }
 
 body {
+    background-color: var(--bgc);
     box-sizing: border-box;
-    font-family: 'Oxygen', sans-serif;
+    font-family: "Lexend", sans-serif; 
     overflow-x: 0 !important;
     line-height: 1.7 !important;
 
@@ -154,9 +158,13 @@ body {
         color: var(--primary-color);
     }
 
+    .card-text{
+        color: var(--bgc)
+    }
+
     & h3 {
         font-size: 36px;
-        color: var(--text-color);
+        color: var(--button-hover);
     }
 
     & h4 {
@@ -190,13 +198,14 @@ h6 {
 }
 
 nav {
-    background-color: #ffffffef;
+    background-color: #5d6f83e0;
     box-shadow: var(--box-shadow);
 
     & .navbar-nav {
-        justify-content: end;
-        margin-left: auto !important;
-        margin-right: 0 !important;
+        /* justify-content: end; */
+        /* margin-left: auto !important; */
+        /* margin-right: 0 !important; */
+        margin-left: 20px;
         gap: 30px;
 
         & .nav-link {
@@ -219,7 +228,9 @@ nav {
         display: flex;
 
         & img {
-            width: 90px;
+            width: 120px;
+            margin-bottom: -5px;
+            margin-top: -5px;
         }
     }
 }
@@ -249,12 +260,13 @@ main {
 
         & .img-col {
             display: flex;
+            justify-content: flex-end;
 
             & img {
                 width: 500px;
                 height: 500px;
                 object-fit: cover;
-                border-radius: 50%;
+                border-radius: 10%;
                 box-shadow: var(--box-shadow);
             }
         }
@@ -266,9 +278,9 @@ main {
 
             & .img img {
                 width: 400px;
-                height: 400px;
+                height: 600px;
                 object-fit: cover;
-                border-radius: 50%;
+                border-radius: 10%;
                 margin: 20px 0;
                 box-shadow: var(--box-shadow);
             }
@@ -294,8 +306,15 @@ main {
 
 }
 
+a.btn-primary{
+    color: var(--bgc)
+}
 
-.banner::before {
+blockquote{
+    color: var(--secondary-color)
+}
+
+/* .banner::before {
     content: "";
     position: absolute;
     top: 0;
@@ -305,7 +324,7 @@ main {
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 
-}
+} */
 
 .banner {
     position: relative;
@@ -313,21 +332,41 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../img/AdobeStock_188341948-edited-scaled.webp');
-    background-repeat: no-repeat;
+    /* background-image: url('../img/AdobeStock_188341948-edited-scaled.webp'); */
+    /* background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    filter: blur(0);
-    transition: filter 0.5s ease;
+    background-size: cover; */
+    filter: grayscale(0);
+    transition: filter 0.2s ease-in;
+    padding: 0;
+
+    & .row{
+        height: 100vh;
+        align-content: center;
+        width: 100%;
+
+        & .col-lg-6{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            
+        }
+
+        & .bg-pic{
+            background-image: url('../img/Courier-Service-1024x683-1.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
 
     & .wrap {
-        height: 100%;
 
         & h1 {
             color: #fff;
             position: relative;
             z-index: 1;
-            font-size: 96px;
+            font-size: 72px;
             margin-top: 24px;
         }
 
@@ -346,12 +385,22 @@ main {
 }
 
 & .pricing-section {
-    background-image: url('../img/automatic\ tracking-hero-mobile.png');
+    background-image: url('../img/HERO_Proof_of_Delivery_Template.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+
+    & .button{
+        display: flex;
+    }
+
+    & a.btn{
+        position: relative;
+        z-index: 1;
+        margin: 50px auto;
+    }
 
     &::before {
         content: "";
@@ -407,6 +456,10 @@ footer {
     background-color: var(--bg-color);
     padding: 100px 0 20px;
 
+    & .btn-primary{
+        color: #151725;
+    }
+
     & .row {
 
         & .col-4 {
@@ -425,7 +478,7 @@ footer {
     .bottom {
         background-color: var(--secondary-color);
         padding: 10px;
-        border-radius: 50px;
+        border-radius: 10px;
         display: flex;
         align-items: center;
 
@@ -436,15 +489,15 @@ footer {
 
         & .copyright {
             color: var(--bg-color);
+            display: flex;
+            justify-content: center;
         }
 
         & a {
             color: var(--button-color);
         }
-    }
 
-    & .form-container {
-        padding-left: 35px;
+
     }
 }
 
@@ -500,7 +553,7 @@ main {
             width: 200px;
             height: 200px;
             object-fit: cover;
-            border-radius: 50%;
+            border-radius: 10%;
             box-shadow: var(--box-shadow);
         }
     }

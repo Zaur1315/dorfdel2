@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
         let scrollPosition = window.scrollY;
 
         if (scrollPosition > 0) {
-            banner.style.filter = 'blur(' + (scrollPosition / 60) + 'px)';
+            banner.style.filter = 'grayscale(' + (scrollPosition) + '%)';
         } else {
-            banner.style.filter = 'blur(0)';
+            banner.style.filter = 'grayscale(0)';
         }
     }
 
