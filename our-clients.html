@@ -24,7 +24,7 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
                     <img src="./assets/img/128.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -50,21 +50,28 @@
                             <a class="hover-up nav-link active" aria-current="page" href="./our-clients.html">Our Clients</a></a>
                         </li>
                     </ul>
-                    <a href="#contact_form" class="btn btn-primary">Contact Us</a>
+                    <a href="#contact_us_form" class="btn btn-primary">Contact Us</a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-
+        
         <section>
-            <div class="container-fluid banner sub-page page-client">
-                <div class="wrap">
-                    <div class="banner-text">
-                        <h1>Our <span>Clients</span></h1>
-                        <h5>Our ultimate target is to cover all the steps from placing an order to having the package
-                            delivered to your door, while saving as much as possible. </h5>
+            <div class="sub-page container-fluid banner">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="wrap">
+                            <div class="banner-text">
+                                <h1>Our <span>Clients</span></h1>
+                                <h5>
+                                    Our ultimate target is to cover all the steps from placing an order to having the package
+                                    delivered to your door, while saving as much as possible.
+                                </h5>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 bg-pic page-clients"></div>
                 </div>
             </div>
         </section>
@@ -146,7 +153,7 @@
     <footer id="footer">
         <div class="container">
             <div class="row pb-5">
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-12">
                     <a href="index.html">
                         <img src="./assets/img/128.png" alt="logo">
                     </a>
@@ -178,7 +185,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-9 col-sm-12">
                     <ul class="testimonial mt-5">
                         <li>
                             <p>
@@ -212,6 +219,16 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <ul class="sub-nav col-6">
+                            <li><a href="./prohibited.html">Prohibited Items</a></li>
+                            <li><a href="./terms.html">Terms & Conditions</a></li>
+                            <li><a href="./countries.html">Countries</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
                 <div class="col-6">
                     <div class="form-container">
                         <form id="contact_us_form" enctype="multipart/form-data">
@@ -241,15 +258,9 @@
                 </div>
             </div>
             <div class="row bottom mt-5">
-                <div class="copyright col-6">
+                <div class="copyright">
                     <span class="copyright">Copyright &copy; COMPANY_NAME LLC 2024. All rights reserved.</span>
                 </div>
-                <ul class="sub-nav col-6 d-flex gap-5 justify-content-end">
-                    <li><a href="./prohibited.html">Prohibited Items</a></li>
-                    <li><a href="./terms.html">Terms & Conditions</a></li>
-                    <li><a href="./countries.html">Countries</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
-                </ul>
             </div>
         </div>
     </footer>

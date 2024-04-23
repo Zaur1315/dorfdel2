@@ -276,6 +276,38 @@ nav {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            
+            &.page-about{
+                background-image: url('../img/PH186226-crop005.avif');
+            }
+
+            &.page-services{
+                background-image: url('../img/1675119371719.jpeg');
+            }
+
+            &.page-work{
+                background-image: url('../img/3e9f09_7a0534bcaeee47a2912c3963886591de~mv2.webp');
+            }
+
+            &.page-clients{
+                background-image: url('../img/Entregas\ a\ domicilio\ delivery.webp');
+            }
+
+            &.page-prohibited{
+                background-image: url('../img/pi-photo-large-00006.jpg');
+            }
+
+            &.page-terms{
+                background-image: url('../img/delivery-man-black-uniform-delivering-package-recipient_8087-3400.avif');
+            }
+            
+            &.page-country{
+                background-image: url('../img/same-day-collection-featured.jpg');
+            }
+
+            &.page-faq{
+                background-image: url('../img/local-courier-service.jpeg');
+            }
         }
     }
 
@@ -521,37 +553,6 @@ main {
         z-index: 1;
     }
 
-    & .page-proh {
-        background-image: url('../img/WorkWave-How-to-Add-a-Delivery-Service-For-Your-Business.jpg');
-    }
-
-    & .page-about {
-        background-image: url('../img/final-mile-delivery-scaled-1.jpeg');
-    }
-
-    & .page-term {
-        background-image: url('../img/term.webp');
-    }
-
-    & .page-country {
-        background-image: url('../img/World-Country-Map-scaled.jpg');
-    }
-
-    & .page-faq {
-        background-image: url('../img/faq-schema-63b70abfc3906-sej-1280x720.webp');
-    }
-
-    & .page-services {
-        background-image: url('../img/package-delivery-companies.jpg');
-    }
-
-    & .page-client {
-        background-image: url('../img/delivery-banner.jpg');
-    }
-
-    & .page-work {
-        background-image: url('../img/641b8b4b1782863716530053_app-for-delivery-routes-hero.webp');
-    }
 
     & .container-768 {
         max-width: 768px;
@@ -582,7 +583,7 @@ main {
         & .solutions {
             & .container {
                 & .img img {
-                    width: 200px;
+                    width: 100%;
                     height: 200px;
                 }
             }
@@ -602,6 +603,13 @@ main {
             }
         }
     }
+
+    & .banner.sub-page {
+        & .bg-pic {
+            height: 20vh !important;
+        }
+    }
+
 
     .about h2 {
         margin-top: 50px;
