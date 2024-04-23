@@ -21,6 +21,16 @@
     transform: scale(1);
 }
 
+#work_form{
+    & label{
+        color: var(--button-color) !important;
+    }
+
+    .btn-primary{
+        color: var(--bgc);
+    }
+}
+
 .hover-up:hover {
     transform: scale(1.05);
 }
@@ -235,10 +245,77 @@ nav {
     }
 }
 
+.banner {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('../img/AdobeStock_188341948-edited-scaled.webp'); */
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    filter: grayscale(0);
+    transition: filter 0.2s ease-in;
+    padding: 0;
+
+    & .row{
+        height: 100vh;
+        align-content: center;
+        width: 100%;
+
+        & .col-lg-6{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            
+        }
+
+        & .bg-pic{
+            background-image: url('../img/Courier-Service-1024x683-1.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    & .wrap {
+
+        & h1 {
+            color: #fff;
+            position: relative;
+            z-index: 1;
+            font-size: 72px;
+            margin-top: 24px;
+        }
+
+        & .sub-header {
+            color: var(--primary-color);
+            position: relative;
+            z-index: 1;
+            font-weight: 700;
+            font-size: 24px;
+            margin-left: auto;
+            width: 100%;
+        }
+    }
+
+
+}
+
+
 main {
 
-    &.sub-page {
-        height: 60vh;
+    & .banner.sub-page {
+        min-height: 70vh;
+
+        & .row{
+            height: 70vh;
+        }
+
+        & .bg-pic{
+            height: 70vh;
+        }
     }
 
     & .brown {
@@ -314,75 +391,6 @@ blockquote{
     color: var(--secondary-color)
 }
 
-/* .banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-
-} */
-
-.banner {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-image: url('../img/AdobeStock_188341948-edited-scaled.webp'); */
-    /* background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
-    filter: grayscale(0);
-    transition: filter 0.2s ease-in;
-    padding: 0;
-
-    & .row{
-        height: 100vh;
-        align-content: center;
-        width: 100%;
-
-        & .col-lg-6{
-            height: 100%;
-            display: flex;
-            align-items: center;
-            
-        }
-
-        & .bg-pic{
-            background-image: url('../img/Courier-Service-1024x683-1.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-    }
-
-    & .wrap {
-
-        & h1 {
-            color: #fff;
-            position: relative;
-            z-index: 1;
-            font-size: 72px;
-            margin-top: 24px;
-        }
-
-        & .sub-header {
-            color: var(--primary-color);
-            position: relative;
-            z-index: 1;
-            font-weight: 700;
-            font-size: 24px;
-            margin-left: auto;
-            width: 100%;
-        }
-    }
-
-
-}
 
 & .pricing-section {
     background-image: url('../img/HERO_Proof_of_Delivery_Template.jpg');
@@ -509,10 +517,6 @@ main {
         z-index: 1;
     }
 
-    & .sub-page {
-        min-height: 70vh;
-    }
-
     & .page-proh {
         background-image: url('../img/WorkWave-How-to-Add-a-Delivery-Service-For-Your-Business.jpg');
     }
@@ -550,7 +554,7 @@ main {
         margin: 0 auto;
 
         & img {
-            width: 200px;
+            width: 90%;
             height: 200px;
             object-fit: cover;
             border-radius: 10%;
