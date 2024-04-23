@@ -21,12 +21,12 @@
     transform: scale(1);
 }
 
-#work_form{
-    & label{
+#work_form {
+    & label {
         color: var(--button-color) !important;
     }
 
-    .btn-primary{
+    .btn-primary {
         color: var(--bgc);
     }
 }
@@ -152,7 +152,7 @@ video {
 body {
     background-color: var(--bgc);
     box-sizing: border-box;
-    font-family: "Lexend", sans-serif; 
+    font-family: "Lexend", sans-serif;
     overflow-x: 0 !important;
     line-height: 1.7 !important;
 
@@ -168,7 +168,7 @@ body {
         color: var(--primary-color);
     }
 
-    .card-text{
+    .card-text {
         color: var(--bgc)
     }
 
@@ -259,53 +259,53 @@ nav {
     transition: filter 0.2s ease-in;
     padding: 0;
 
-    & .row{
+    & .row {
         height: 100vh;
         align-content: center;
         width: 100%;
 
-        & .col-lg-6{
+        & .col-lg-6 {
             height: 100%;
             display: flex;
             align-items: center;
-            
+
         }
 
-        & .bg-pic{
+        & .bg-pic {
             background-image: url('../img/Courier-Service-1024x683-1.jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            
-            &.page-about{
+
+            &.page-about {
                 background-image: url('../img/PH186226-crop005.avif');
             }
 
-            &.page-services{
+            &.page-services {
                 background-image: url('../img/1675119371719.jpeg');
             }
 
-            &.page-work{
+            &.page-work {
                 background-image: url('../img/3e9f09_7a0534bcaeee47a2912c3963886591de~mv2.webp');
             }
 
-            &.page-clients{
+            &.page-clients {
                 background-image: url('../img/Entregas\ a\ domicilio\ delivery.webp');
             }
 
-            &.page-prohibited{
+            &.page-prohibited {
                 background-image: url('../img/pi-photo-large-00006.jpg');
             }
 
-            &.page-terms{
+            &.page-terms {
                 background-image: url('../img/delivery-man-black-uniform-delivering-package-recipient_8087-3400.avif');
             }
-            
-            &.page-country{
+
+            &.page-country {
                 background-image: url('../img/same-day-collection-featured.jpg');
             }
 
-            &.page-faq{
+            &.page-faq {
                 background-image: url('../img/local-courier-service.jpeg');
             }
         }
@@ -341,11 +341,11 @@ main {
     & .banner.sub-page {
         min-height: 70vh;
 
-        & .row{
+        & .row {
             height: 70vh;
         }
 
-        & .bg-pic{
+        & .bg-pic {
             height: 70vh;
         }
     }
@@ -394,7 +394,7 @@ main {
                 box-shadow: var(--box-shadow);
             }
 
-            & ul{
+            & ul {
                 color: var(--text-color)
             }
 
@@ -419,11 +419,11 @@ main {
 
 }
 
-a.btn-primary{
+a.btn-primary {
     color: var(--bgc)
 }
 
-blockquote{
+blockquote {
     color: var(--secondary-color)
 }
 
@@ -436,11 +436,11 @@ blockquote{
     background-attachment: fixed;
     position: relative;
 
-    & .button{
+    & .button {
         display: flex;
     }
 
-    & a.btn{
+    & a.btn {
         position: relative;
         z-index: 1;
         margin: 50px auto;
@@ -500,7 +500,7 @@ footer {
     background-color: var(--bg-color);
     padding: 100px 0 20px;
 
-    & .btn-primary{
+    & .btn-primary {
         color: #151725;
     }
 
@@ -661,17 +661,17 @@ main {
         }
     }
 
-    & .accordion-button{
+    & .accordion-button {
         background-color: var(--bg-color);
         color: var(--bg-color-new);
     }
 
-    & .accordion-item{
+    & .accordion-item {
         border: 10px solid var(--bgc);
         background-color: transparent;
     }
 
-    .accordion-button:not(.collapsed){
+    .accordion-button:not(.collapsed) {
         background-color: #7d84b2;
         box-shadow: none;
         color: var(--button-color);
