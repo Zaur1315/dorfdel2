@@ -362,6 +362,10 @@ main {
                 box-shadow: var(--box-shadow);
             }
 
+            & ul{
+                color: var(--text-color)
+            }
+
             h4 {
                 text-align: center;
             }
@@ -634,5 +638,34 @@ main {
                 padding: 0 20px 70px 20px;
             }
         }
+    }
+}
+
+
+
+
+main {
+    & .solutions {
+        & .container {
+            & ul {
+                color: var(--text-color);
+            }
+        }
+    }
+
+    & .accordion-button{
+        background-color: var(--bg-color);
+        color: var(--bg-color-new);
+    }
+
+    & .accordion-item{
+        border: 10px solid var(--bgc);
+        background-color: transparent;
+    }
+
+    .accordion-button:not(.collapsed){
+        background-color: #7d84b2;
+        box-shadow: none;
+        color: var(--button-color);
     }
 }
