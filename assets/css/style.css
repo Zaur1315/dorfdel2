@@ -596,11 +596,25 @@ main {
 }
 
 @media (max-width: 586px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
     .banner {
+
+        & .col-sm-12{
+            height: 50%;
+        }
+
         & .wrap {
             & h1 {
-                font-size: 56px;
+                font-size: 44px;
             }
+        }
+
+        & .bg-pic{
+            height: 20vh !important;
         }
     }
 
